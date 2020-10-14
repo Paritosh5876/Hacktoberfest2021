@@ -1,0 +1,86 @@
+// Pattern Generator
+
+#include<iostream.h>
+#include<conio.h>
+#include<process.h>
+
+void ltrsPtrn(int n)
+{
+  int i, j;
+  for(i=0; i<n; i++)
+  {
+    for(j=0; j<=i; j++)
+    {
+      cout<<char(65+j);
+    }
+    cout<<'\n';
+  }
+}
+void dgtsPtrn(int n)
+{
+  int i, j;
+  for(i=0; i<n; i++)
+  {
+    for(j=0; j<=i; j++)
+    {
+      cout<<j+1;
+    }
+    cout<<'\n';
+  }
+}
+
+void starPtrn(int n)
+{
+  int i, j;
+  for(i=0; i<n; i++)
+  {
+    for(j=0; j<=i; j++)
+    {
+      cout<<'*';
+    }
+    cout<<'\n';
+  }
+}
+
+void rvrsPtrn(int n)
+{
+  int i, j;
+  for(i=0; i<n; i++)
+  {
+    for(j=n-i; j>0; j--)
+    {
+      cout<<'*';
+    }
+    cout<<'\n';
+  }
+}
+
+void main()
+{
+  clrscr();
+  int n, r;
+  char ch;
+  cout<<"Enter a number. ";
+  cin>>r;
+  do
+  {
+    cout<<"\n\tMenu.";
+    cout<<"\n1. Alphabetical Pattern\n2. Digits Pattern\n3. Star Pattern\n4. Reverse star Pattern\n5. Exit.\nEnter your choice. ";
+    cin>>n;
+
+    switch(n)
+    {
+      case 1: ltrsPtrn(r); break;
+      case 2: dgtsPtrn(r); break;
+      case 3: starPtrn(r); break;
+      case 4: rvrsPtrn(r); break;
+      case 5: exit(0); break;
+      default: cout<<"\nPlease enter valid choice {1-5}!";
+    }
+
+    cout<<"Want to run again? (Yes/No)";
+    cin>>ch;
+  } while( (ch=='Y') || (ch=='y') );
+
+  getch();
+}
