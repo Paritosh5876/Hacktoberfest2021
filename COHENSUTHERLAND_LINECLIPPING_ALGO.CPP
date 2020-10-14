@@ -1,4 +1,30 @@
-//COHEN SUTHERLAND
+//COHEN SUTHERLAND LINE CLIPPING ALGORITHM
+/*
+The Cohen–Sutherland algorithm is a computer-graphics algorithm used for line clipping. The algorithm divides a two-dimensional space into 9 regions and 
+then efficiently determines the lines and portions of lines that are visible in the central region of interest (the viewport).
+
+In the algorithm, first of all, it is detected whether line lies inside the screen or it is outside the screen. All lines come under any one of the following categories:
+
+Visible
+Not Visible
+Clipping Case
+1. Visible: If a line lies within the window, i.e., both endpoints of the line lies within the window. A line is visible and will be displayed as it is.
+2. Not Visible: If a line lies outside the window it will be invisible and rejected. Such lines will not display. If any one of the following inequalities is satisfied, then the line is considered invisible. Let A (x1,y2) and B (x2,y2) are endpoints of line.
+xmin,xmax are coordinates of the window.
+ymin,ymax are also coordinates of the window.
+          x1>xmax
+          x2>xmax
+          y1>ymax
+          y2>ymax
+          x1<xmin
+          x2<xmin
+          y1<ymin
+          y2<ymin
+
+3. Clipping Case: If the line is neither visible case nor invisible case. It is considered to be clipped case. First of all, the category of a line is found based on nine regions given below. All nine regions are assigned codes. Each code is of 4 bits. If both endpoints of the line have end bits zero, then the line is considered to be visible.
+
+
+*/
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
