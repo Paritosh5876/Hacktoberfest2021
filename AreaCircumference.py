@@ -10,6 +10,6 @@ if a==1:
     area = 1/2 *int( wdth)*int(hight)
     print(area)
 if a==2:
-    radius=input(print("enter the radius of tyhe circle "))
+    radius=input(print("enter the radius of type circle "))
     circle=2*3.14*int(radius)
     print(circle)
