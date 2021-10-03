@@ -1,5 +1,3 @@
-Find the word a Game
-
 #include<stdio.h>
 #include<conio.h>
 
