@@ -2,6 +2,8 @@
 
 import BubbleSort
 
-array = [5, 3, 8, 6, 7, 2]
+array_input = input()   # Example: 2 3 4 5
+
+array = list(map(int,arr.split(' '))) 
 
 bubble_sort(array)
