@@ -1,10 +1,10 @@
-# HacktoberFest2020
+# HacktoberFest2021
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-156-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-#### Contribute to hacktoberfest 2020
+#### Contribute to hacktoberfest 2021
 
-### Welcome to HacktoberFest 2020 Public Repository.
+### Welcome to HacktoberFest 2021 Public Repository.
 <p>A month-long celebration from October 1st - 31st sponsored by Digital Ocean and GitHub to get people involved in Open Source. Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
 
 https://hacktoberfest.digitalocean.com/</p>
