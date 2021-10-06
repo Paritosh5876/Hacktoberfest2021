@@ -1,3 +1,6 @@
+#Bubble Sort is the simplest sorting algorithm. It works by repeatedly swapping the adjacent elements if they are in wrong order.
+#The time Complexity of Bubble Sort algorithm is O(N^2) where N is the number of elements in the array.
+
 def bubbleSort (array, size)
   array.each do
     for j in 0 .. (size-2)
