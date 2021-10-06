@@ -54,4 +54,4 @@ def _is_repeating(password):
     return False
 
 if __name__ == '__main__':
-    print generate_random_password(random.randint(6, 30), SEQUENCE)
+    print(generate_random_password(random.randint(6, 30), SEQUENCE))
