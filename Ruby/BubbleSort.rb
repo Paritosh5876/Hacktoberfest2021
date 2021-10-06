@@ -14,8 +14,10 @@ def bubbleSort (array, size)
   array
 end
 
+puts "Please enter numbers separated by spaces:"
+s = gets
 
-array = [0,9,1,4,2]
+array = s.split(" ")
 
 print(array)
 
@@ -26,6 +28,14 @@ puts("\nAfter sorting: ")
 print(array)
 
 #Output
-#    [0, 9, 1, 4, 2]
-#    After Sorting:
-#    [0, 1, 2, 4, 9]
+#please enter numbers separated by spaces:
+#9
+#34
+#23
+#11
+#90
+#[9, 34, 23, 11, 90]
+#After Sorting:
+#[9, 11, 23, 34, 90]
+
+
