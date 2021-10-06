@@ -1,4 +1,4 @@
-mport numpy as np
+import numpy as np
 
 problem = [[6 , 7 , 0 , 0 , 0 , 0 , 0 , 0 , 2],
            [0 , 0 , 1 , 7 , 9 , 0 , 0 , 3 , 0],
