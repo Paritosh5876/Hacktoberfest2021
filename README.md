@@ -31,6 +31,8 @@ cd HacktoberFest2020
 * Make a new branch
 ```markdown
 git checkout -b branch-name
+
+Test
 ```
 * Make change in the repository with the new branch.
 * push the changes.
