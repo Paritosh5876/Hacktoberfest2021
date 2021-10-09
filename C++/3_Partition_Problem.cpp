@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <numeric>
-using namespace std;
- 
+using namespace std; 
 // Helper function for solving 3 partition problem.
 // It returns true if there exist three subsets with a given sum
 bool subsetSum(vector<int> const &S, int n, int a, int b, int c)
