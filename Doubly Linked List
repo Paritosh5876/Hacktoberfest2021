@@ -1,0 +1,55 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+struct node
+{
+    int no;
+    node *p,*n;
+}*start=NULL,*tmp=NULL,*t,*l;
+
+void cn()
+{
+    tmp = new(node);
+    cout<<"Enter No: ";
+    cin>>tmp->no;
+    tmp->p=NULL;
+    tmp->n=NULL;
+}
+
+void in()
+{
+    cn();
+    if(start==NULL)
+    {
+        start=tmp;
+    }
+    else
+    {
+        t=start;
+        while(t->n!=NULL)
+        {
+            t=t->n;
+        }
+        t->n=tmp;
+        t->n->p=t;
+        t=t->n;
+    }
+}
+
+void dsp()
+{
+    t=start;
+    while(t!=NULL)
+    {
+        cout<<t->no<<" <-> ";
+        t=t->n;
+    }
+}
+
+int main()
+{
+    in();
+    in();
+    in();
+    dsp();
+}
