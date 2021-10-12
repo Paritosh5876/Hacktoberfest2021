@@ -125,7 +125,7 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2021 Prakul Patel
+Copyright (c) 2021 Paritosh5876
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
