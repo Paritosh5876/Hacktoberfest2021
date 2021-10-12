@@ -140,8 +140,8 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 <table>
 	<tr>
 		 <td>
-  		<a href="https://github.com/hanshulll/Hacktoberfest2021/graphs/contributors">
-  			<img src="https://contributors-img.web.app/image?repo=hanshulll/Hacktoberfest2021" />
+  		<a href="https://github.com/paritosh5876/Hacktoberfest2021/graphs/contributors">
+  			<img src="https://contributors-img.web.app/image?repo=paritosh5876/Hacktoberfest2021" />
   		</a>
 		</td>
 	</tr>
@@ -154,7 +154,7 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 
 This project is licensed under the MIT License.
 
-Copyright (c) 2021 Hanshul Chandel
+Copyright (c) 2021 Prakul Patel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
