@@ -4,7 +4,7 @@ class decimal_to_binary
     public static void main()
     {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a Number");
+        System.out.println("Enter a Number in decimmal");
         int n=sc.nextInt();
         String str="";
         int k=n;
@@ -18,7 +18,7 @@ class decimal_to_binary
               break;
         }
     }
-        System.out.println(str);
+        System.out.println("binary number="+str);
     
 }
 }
