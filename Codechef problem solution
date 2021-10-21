@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int A[5];
+	    int count1=0,count2=0,count3=0;
+	    for(int i=0;i<5;i++){
+	        cin>>A[i];
+	    }
+	    for(int i=0;i<5;i++){
+	        if(A[i] == 1){
+	            count1++;
+	        }
+	        else if(A[i] == 2){
+	            count2++;
+	        }
+	        else{
+	            count3++;
+	        }
+	    }
+	    if(count1 > count2){
+	        cout<<"INDIA"<<endl;
+	    }
+	    else if(count1 == count2){
+	        cout<<"DRAW"<<endl;
+	    }
+	    else{
+	        cout<<"ENGLAND"<<endl;
+	    }
+	}
+	return 0;
+}
