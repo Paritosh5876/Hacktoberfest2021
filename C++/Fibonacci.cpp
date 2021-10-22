@@ -9,12 +9,11 @@ int fib(int n)
 	return fib(n-1) + fib(n-2);
 }
 
-int main ()
+void main ()
 {
 	int n = 9;
 	cout << fib(n);
 	getchar();
-	return 0;
 }
 
 
