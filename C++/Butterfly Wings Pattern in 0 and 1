@@ -1,0 +1,85 @@
+/* Prints a pattern like 
+0        0
+10      10
+010    010
+1010  1010
+0101001010
+1010  1010
+010    010
+10      10
+0        0
+
+*/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cout << "Enter the value of n : ";
+	cin >> n;
+	cout << endl;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			if ((i + j) % 2 == 0)
+			{
+				cout << "1";
+			}
+			else
+			{
+				cout << "0";
+			}
+		}
+		int space = 2 * n - 2 * i;
+		for (int j = 0; j < space; j++)
+		{
+			cout << " ";
+		}
+		for (int j = 0; j < i; j++)
+		{
+			if ((i + j) % 2 == 0)
+			{
+				cout << "1";
+			}
+			else
+			{
+				cout << "0";
+			}
+		}
+		cout << endl;
+	}
+	for (int i = n; i > 0; i--)
+	{
+		for (int j = 0; j < i; j++)
+		{
+			if ((i + j) % 2 == 0)
+			{
+				cout << "1";
+			}
+			else
+			{
+				cout << "0";
+			}
+		}
+		int space = 2 * n - 2 * i;
+		for (int j = 0; j < space; j++)
+		{
+			cout << " ";
+		}
+		for (int j = 0; j < i; j++)
+		{
+			if ((i + j) % 2 == 0)
+			{
+				cout << "1";
+			}
+			else
+			{
+				cout << "0";
+			}
+		}
+		cout << endl;
+	}
+}
