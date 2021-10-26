@@ -1,20 +1,18 @@
-//Fibonacci Series using Recursion
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-int fib(int n)
-{
-	if (n <= 1)
-		return n;
-	return fib(n-1) + fib(n-2);
+int fibonacci(int n){
+    if(n<2){
+        return 1;
+    }
+    return fibonacci(n-1) + fibonacci(n-2);
 }
 
-int main ()
-{
-	int n = 9;
-	cout << fib(n);
-	getchar();
-	return 0;
+int main(){
+    int a;
+    cout<<"Enter a number:";
+    cin>>a;
+    cout<<"The term in fibonacci sequence at position "<< a <<" is "<< fibonacci(a);
+
+    return 0;
 }
-
-
