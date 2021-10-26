@@ -8,15 +8,15 @@ public:
     Test() {
         cout << "Enter a number : ";
         cin>>n;
-
         f = 1;
-        for (i = 1; i <= n; i++) {
+        i = 1;
+        while(i<=n){
             f = f*i;
         }
     }
 
     void display() {
-        cout << "\nFactorial is : " << f;
+        cout << "\nFactorial is : " <<f<<endl;
     }
 };
 
