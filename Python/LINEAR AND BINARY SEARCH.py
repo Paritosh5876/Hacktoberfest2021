@@ -13,7 +13,7 @@ def linear_Search(list1, n, key):
   
   
 list1 = [1 ,3, 5, 4, 7, 9]  
-key = 7  
+key = int(int("enter any number that you want to search : "))
   
 n = len(list1)  
 res = linear_Search(list1, n, key)  
@@ -55,7 +55,7 @@ def binary_search(list1, n):
   
 # Initial list1  
 list1 = [12, 24, 32, 39, 45, 50, 54]  
-n = 45  
+n = int(input("Enter any number that you want to search : ")) 
   
 # Function call   
 result = binary_search(list1, n)  
