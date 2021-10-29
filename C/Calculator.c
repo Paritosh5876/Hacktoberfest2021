@@ -1,38 +1,37 @@
-# include <iostream>
-using namespace std;
+# include <stdio.h>
 
 int main()
 {
     char op;
     float num1, num2;
 
-    cout << "Enter operator either + or - or * or /: ";
-    cin >> op;
+    printf("Enter operator either + or - or * or /: ");
+    scanf("%c",&op);
 
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
+    printf("Enter two operands: ");
+    scanf("%f%f",&num1,&num2);
 
     switch(op)
     {
         case '+':
-            cout << num1+num2;
+            printf("%d",(num1+num2));
             break;
 
         case '-':
-            cout << num1-num2;
+            printf("%d",(num1-num2));
             break;
 
         case '*':
-            cout << num1*num2;
+            printf("%d",(num1*num2));
             break;
 
         case '/':
-            cout << num1/num2;
+            printf("%d",(num1/num2));
             break;
 
         default:
             // If the operator is other than +, -, * or /, error message is shown
-            cout << "Error! operator is not correct";
+            printf("Error! operator is not correct");
             break;
     }
 
