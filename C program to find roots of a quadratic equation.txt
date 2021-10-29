@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 
-void findRoots(int a, int b, int c)
+void findRoots(int a, int b, int c) 
 {
 	if (a == 0) {
 		printf("Invalid");
@@ -32,11 +32,12 @@ void findRoots(int a, int b, int c)
 }
 
 // Driver code
-int main()
+int main(void) //execution of each program starts with main function.
 {
 	int a = 1, b = -7, c = 12;
 
 	// Function call
 	findRoots(a, b, c);
-	return 0;
+	
+	return 0; //return is a keyword, It will return 0 to the main function.
 }
