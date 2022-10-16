@@ -11,7 +11,7 @@ int fib(int n)
 
 int main ()
 {
-	int n = 9;
+	int n = 10;
 	cout << fib(n);
 	getchar();
 	return 0;
