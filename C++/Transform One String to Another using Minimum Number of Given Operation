@@ -1,0 +1,51 @@
+// C++ implementation
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int minOps(string& S1, string& S2)
+{
+	int m = S1.length(), n = S2.length();
+
+
+	if (n != m)
+		return -1;
+	int count[256];
+	memset(count, 0, sizeof(count));
+
+	for (int i = 0; i < n; i++)
+		count[S1[i]]++;
+
+	for (int i = 0; i < n; i++)
+		count[S2[i]]--;
+
+	for (int i = 0; i < 256; i++)
+		if (count[i])
+			return -1;
+
+
+	int result = 0;
+	for (int i = n - 1, j = n - 1; i >= 0;) {
+
+		while (i >= 0 && S1[i] != S2[j]) {
+			i--;
+			result++;
+		}
+
+		if (i >= 0) {
+			i--;
+			j--;
+		}
+	}
+	return result;
+}
+
+
+int main()
+{
+	string S1 , S2;
+	cin>>S1>>S2;
+	cout << "Minimum number of operations required is " << minOps(S1, S2);
+	return 0;
+}
+
